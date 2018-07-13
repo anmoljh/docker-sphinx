@@ -9,9 +9,11 @@ RUN apt-get update && \
     apt-get install -y -q git vim tree && \
     pip install --upgrade pip && \
     pip install --upgrade virtualenv && \
-    pip install sphinx_rtd_theme
+    pip install sphinx_rtd_theme    
+RUN groupadd -r -g 1000 ubuntu && useradd -r -g ubuntu -u 1000 -m ubuntu
+RUN mkdir /sphinx-docs && chown ubuntu:ubuntu /sphinx-docs
 
-RUN mkdir sphinx-docs
+USER ubuntu
 WORKDIR /sphinx-docs
 VOLUME /sphinx-docs
 
