@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-set -eux
-set -o pipefail
+set -euxo pipefail
 
 PROJECT_NAME="${SPHINX_PROJECT_NAME:-DemoProject}"
 AUTHOR_NAME="${SPHINX_AUTHOR_NAME:-AH}"
