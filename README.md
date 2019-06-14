@@ -35,7 +35,7 @@
 
     - Html documents are generated at $HOME/sphinx-docs/`SPHINX_PROJECT_NAME`/docs/build/html
       directory.
-    - Go the directory and open the index.rst file in any browser.
+    - Go the directory and open the index.html file in any browser.
 
     **Note:-**
 
